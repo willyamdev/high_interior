@@ -19,7 +19,7 @@ export default function Cape(props: PropsType) {
                     <Link to="/">Gallery</Link>
                     <Link to="/">Contact</Link>
                 </div>
-                <Search />
+                <Search color="secondary"/>
             </div>
 
             <div className="cape__content">
