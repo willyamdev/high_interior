@@ -1,0 +1,64 @@
+.best-interior {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 180px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.best-interior__image__container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.best-interior__image__container>img {
+    border-radius: 6px;
+    width: 75%;
+
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.51);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.51);
+}
+
+.best-interior__content {
+    flex: 1.2;
+}
+
+.best-interior__content h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.best-interior__content p {
+    color: gray;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.best-interior__content button {
+    background-color: rgb(0, 0, 255);
+    padding: 15px 40px;
+    margin-top: 40px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.5s;
+
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 255, 0.7);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 255, 0.7);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 255, 0.7);
+}
+
+.best-interior__content button:active {
+    background-color: rgb(1, 1, 199);
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 255, 0.7);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 255, 0.7);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 255, 0.7);
+}
+
+.best-interior__content button:focus {
+    outline: none;
+}
