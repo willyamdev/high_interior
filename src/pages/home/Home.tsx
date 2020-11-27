@@ -1,7 +1,8 @@
 import React from 'react';
-import Benefit from './components/Benefit/Benefit';
+import Benefit from './components/benefit/Benefit';
 import BestInterior from './components/best-interior/BestInterior';
-import Cape from './components/Cape/Cape';
+import Cape from './components/cape/Cape';
+import ExploreGallery from './components/explore-gallery/ExploreGallery';
 import CapeImage from './images/home-image.jpg'
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
             <Cape image={CapeImage} />
             <Benefit/>
             <BestInterior/>
+            <ExploreGallery/>
         </div>
     );
 }

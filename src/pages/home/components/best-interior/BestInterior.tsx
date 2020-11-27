@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/best-interior.css';
 import Interior02 from '../../images/interior02.jpg';
+import ActionButton from '../../../global/components/action-button/ActionButton';
 
 export default function BestInterior() {
     return (
@@ -13,7 +14,7 @@ export default function BestInterior() {
                 <p>
                     We work with the best professionals in the market and use the most advanced techniques and concepts to achieve incredible designs!
                 </p>
-                <button>View more</button>
+                <ActionButton>View more</ActionButton>
             </div>
         </div>
     )
