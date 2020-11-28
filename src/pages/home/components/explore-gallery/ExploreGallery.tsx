@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import ActionButton from '../../../global/components/action-button/ActionButton';
 import './css/explore-gallery.css';
 
@@ -14,7 +14,7 @@ import image07 from '../../images/slide-images/image07.jpg';
 
 export default function ExploreGallery() {
 
-    let images: Array<string> = [
+    const images: Array<string> = [
         image01,
         image02,
         image03,
@@ -23,6 +23,18 @@ export default function ExploreGallery() {
         image06,
         image07
     ];
+
+    let sliderContainer = useRef<HTMLDivElement>(null);
+
+    function prev() {
+        let sliderElement = sliderContainer.current;
+        sliderElement?.scrollTo(sliderElement?.scrollWidth, 0);
+    }
+
+    function back() {
+        let sliderElement = sliderContainer.current;
+        sliderElement?.scrollTo(0, 0);
+    }
 
     return (
         <div className="explore-gallery">
@@ -36,24 +48,23 @@ export default function ExploreGallery() {
                 </div>
             </div>
             <div className="explore-gallery__slider">
-
-
-                <div className="explore-gallery__slider__btn btn-back">
+                <div className="explore-gallery__slider__btn btn-back" onClick={back}>
                     <ArrowBackIosOutlined />
                 </div>
 
-                <div className="explore-gallery__slider__btn btn-forward">
+                <div className="explore-gallery__slider__btn btn-forward" onClick={prev}>
                     <ArrowForwardIosOutlined />
                 </div>
 
-                {images.map((data, index) => (
-                    <div className="image-slide" key={index}
-                        style={{
-                            backgroundImage: `url(${data})`
-                        }}
-                    />
-                ))}
-
+                <div className="explore-gallery__slider__container" ref={sliderContainer}> 
+                    {images.map((data, index) => (
+                        <div className="image-slide" key={index}
+                            style={{
+                                backgroundImage: `url(${data})`
+                            }}
+                        />
+                    ))}
+                </div>
             </div>
         </div>
     )
