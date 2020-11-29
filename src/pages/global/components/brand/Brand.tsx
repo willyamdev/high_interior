@@ -8,7 +8,7 @@ type PropsTypes = {
 export default function Brand(props: PropsTypes) {
     return (
         <span className="brand" style={{ fontSize: props.fontSize }}>
-            High<span className="not-spot">Interior</span>
+            High<span className="white-spot">Interior</span>
         </span>
     )
 }
