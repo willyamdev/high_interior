@@ -7,7 +7,7 @@ export default function Subscribe() {
         <div className="subscribe">
             <h1>Subscribe us for the latest news</h1>
             <p>We highly recommended to subscribe us for the latest news enter your email below.</p>
-            <input placeholder="Email" spellCheck={false} type="text"/>
+            <input placeholder="Email" spellCheck={false} type="email"/>
             <ActionButton>Subscribe</ActionButton>
         </div>
     )

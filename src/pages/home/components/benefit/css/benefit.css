@@ -1,9 +1,8 @@
+@import url('./benefit-responsiveness.css');
+
 .benefit {
-    width: 60%;
     margin: 0 auto;
-
     margin-top: 50px;
-
     display: flex;
 }
 
@@ -31,7 +30,6 @@
 .benefit__topics>h1 {
     font-weight: 500;
     margin-bottom: 30px;
-    width: fit-content;
 }
 
 .benefit__topic__item {

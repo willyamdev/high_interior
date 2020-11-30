@@ -1,3 +1,5 @@
+@import url('./footer-resp.css');
+
 .footer{
     width: 100%;
     padding: 50px;
@@ -45,7 +47,6 @@
     font-size: 0.9em;
     cursor: pointer;
     margin-bottom: 10px;
-    width: fit-content;
 }
 
 .footer-links:hover{

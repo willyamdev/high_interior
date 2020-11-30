@@ -2,7 +2,6 @@ import React from 'react';
 import './css/benefit.css';
 import BenefitItem from './components/BenefitItem';
 import Interior01 from '../../images/interior01.jpg';
-import Interior02 from '../../images/interior02.jpg';
 
 export default function Benefit() {
 

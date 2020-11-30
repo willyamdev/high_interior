@@ -1,0 +1,77 @@
+/* Super-Small devices (landscape phones, 576px and up)*/
+@media (min-width: 200px) and (max-width: 575px) {
+    .subscribe {
+        width: 100%;
+        text-align: center;
+    }
+
+    .subscribe input {
+        width: 70%;
+    }
+
+    .subscribe input:focus {
+        width: 80%;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .subscribe {
+        width: 100%;
+        text-align: center;
+    }
+
+    .subscribe input {
+        width: 70%;
+    }
+
+    .subscribe input:focus {
+        width: 80%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .subscribe {
+        width: 60%;
+    }
+
+    .subscribe input {
+        width: 45%;
+    }
+
+    .subscribe input:focus {
+        width: 50%;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .subscribe {
+        width: 60%;
+    }
+
+    .subscribe input {
+        width: 45%;
+    }
+
+    .subscribe input:focus {
+        width: 50%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .subscribe {
+        width: 60%;
+    }
+
+    .subscribe input {
+        width: 45%;
+    }
+
+    .subscribe input:focus {
+        width: 50%;
+    }
+}

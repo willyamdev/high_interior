@@ -1,5 +1,6 @@
+@import url('./explore-gallery-responsiveness.css');
+
 .explore-gallery {
-    width: 60%;
     margin: 0 auto;
     margin-top: 180px;
 
